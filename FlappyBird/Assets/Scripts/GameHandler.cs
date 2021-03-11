@@ -11,10 +11,13 @@ public class GameHandler : MonoBehaviour
     {
         Debug.Log("GameHandler.Start");
 
-        int count = 0;
-        FunctionPeriodic.Create(() => {
-          CMDebug.TextPopupMouse("Ding! " + count);
-          count++;
-          }, .300f);
+        // int count = 0;
+        // FunctionPeriodic.Create(() => {
+        //   CMDebug.TextPopupMouse("Ding! " + count);
+        //   count++;
+        //   }, .300f);
+
+        GameObject gameObject = new GameObject("Pipe", typeof(SpriteRenderer));
+        gameObject.GetComponent<SpriteRenderer>().sprite = GameAssets.GetInstance().pipeHeadSprite;
     }
 }
