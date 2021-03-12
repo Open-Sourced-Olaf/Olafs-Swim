@@ -9,22 +9,35 @@ public class Level : MonoBehaviour
     private const float PIPE_HEAD_HEIGHT = 3.75f;
     private const float PIPE_MOVE_SPEED = 10f;
     private const float PIPE_DESTROY_X_POSITION = -100f;
+    private const float PIPE_SPAWN_X_POSITION = +100f;
 
     private List<Pipe> pipeList;
+    private float pipeSpawnTimer;
+    private float pipeSpawnTimerMax;
 
     private void Awake() {
       pipeList = new List<Pipe>();
+      pipeSpawnTimerMax = .5f;
     }
     private void Start() {
       // CreatePipe(50f, 20f, true);
       // CreatePipe(50f, 20f, false);
-      CreateGapPipes(50f, 20f, 20f);
+      // CreateGapPipes(50f, 20f, 20f);
     }
 
     private void Update() {
       HandlePipeMovement();
+      HandlePipeSpawning();
     }
 
+    private void HandlePipeSpawning() {
+      pipeSpawnTimer -= Time.deltaTime;
+      if (pipeSpawnTimer < 0) {
+        // Time to spawn another Pipe
+        pipeSpawnTimer += pipeSpawnTimerMax;
+        CreateGapPipes(50f, 20f, PIPE_SPAWN_X_POSITION);
+      }
+    }
     private void HandlePipeMovement() {
       for (int i = 0; i < pipeList.Count; i++) {
         Pipe pipe = pipeList[i];
