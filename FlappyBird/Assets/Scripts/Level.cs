@@ -72,15 +72,19 @@ public class Level : MonoBehaviour
       switch (difficulty) {
         case Difficulty.Easy:
           gapSize = 50f;
+          pipeSpawnTimerMax = 1.2f;
           break;
         case Difficulty.Medium:
           gapSize = 40f;
+          pipeSpawnTimerMax = 1.1f;
           break;
         case Difficulty.Hard:
-          gapSize = 30f;
+          gapSize = 33f;
+          pipeSpawnTimerMax = 1.0f;
           break;
         case Difficulty.Impossible:
-          gapSize = 20f;
+          gapSize = 24f;
+          pipeSpawnTimerMax = .8f;
           break;
       }
     }
