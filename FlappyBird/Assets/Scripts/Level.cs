@@ -14,10 +14,12 @@ public class Level : MonoBehaviour
     private List<Pipe> pipeList;
     private float pipeSpawnTimer;
     private float pipeSpawnTimerMax;
+    private float gapSize;
 
     private void Awake() {
       pipeList = new List<Pipe>();
       pipeSpawnTimerMax = 1f;
+      gapSize = 50f;
     }
     private void Start() {
       // CreatePipe(50f, 20f, true);
@@ -35,7 +37,13 @@ public class Level : MonoBehaviour
       if (pipeSpawnTimer < 0) {
         // Time to spawn another Pipe
         pipeSpawnTimer += pipeSpawnTimerMax;
-        CreateGapPipes(50f, 20f, PIPE_SPAWN_X_POSITION);
+
+        float heightEdgeLimit = 10f;
+        float minHeight = gapSize * .5f + heightEdgeLimit;
+        float totalHeight = CAMERA_ORTHO_SIZE * 2f;
+        float maxHeight = totalHeight - gapSize * .5f - heightEdgeLimit;
+        float height = Random.Range(minHeight, maxHeight);
+        CreateGapPipes(height, gapSize, PIPE_SPAWN_X_POSITION);
       }
     }
     private void HandlePipeMovement() {
