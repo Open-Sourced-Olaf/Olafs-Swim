@@ -8,6 +8,7 @@ public class Level : MonoBehaviour
     private const float PIPE_WIDTH = 7.8f;
     private const float PIPE_HEAD_HEIGHT = 3.75f;
     private const float PIPE_MOVE_SPEED = 10f;
+    private const float PIPE_DESTROY_X_POSITION = -100f;
 
     private List<Pipe> pipeList;
 
@@ -25,8 +26,15 @@ public class Level : MonoBehaviour
     }
 
     private void HandlePipeMovement() {
-      foreach (Pipe pipe in pipeList) {
+      for (int i = 0; i < pipeList.Count; i++) {
+        Pipe pipe = pipeList[i];
         pipe.Move();
+        if (pipe.GetXPosition() < PIPE_DESTROY_X_POSITION) {
+          // Destroy the Pipe
+          pipe.DestroySelf();
+          pipeList.Remove(pipe);
+          i--;
+        }
       }
     }
 
@@ -86,6 +94,15 @@ public class Level : MonoBehaviour
       public void Move() {
         pipeHeadTransform.position += new Vector3(-1, 0, 0) * PIPE_MOVE_SPEED * Time.deltaTime;
         pipeBodyTransform.position += new Vector3(-1, 0, 0) * PIPE_MOVE_SPEED * Time.deltaTime;
+      }
+
+      public float GetXPosition() {
+        return pipeHeadTransform.position.x;
+      }
+
+      public void DestroySelf() {
+        Destroy(pipeHeadTransform.gameObject);
+        Destroy(pipeBodyTransform.gameObject);
       }
     }
 }
