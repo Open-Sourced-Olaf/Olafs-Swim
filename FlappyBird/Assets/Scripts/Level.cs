@@ -10,6 +10,7 @@ public class Level : MonoBehaviour
     private const float PIPE_MOVE_SPEED = 30f;
     private const float PIPE_DESTROY_X_POSITION = -100f;
     private const float PIPE_SPAWN_X_POSITION = +100f;
+    private const float BIRD_X_POSITION = 0f;
 
     private static Level instance;
 
@@ -17,6 +18,7 @@ public class Level : MonoBehaviour
       return instance;
     }
     private List<Pipe> pipeList;
+    private int pipesPassedCount;
     private int pipesSpawned;
     private float pipeSpawnTimer;
     private float pipeSpawnTimerMax;
@@ -63,7 +65,12 @@ public class Level : MonoBehaviour
     private void HandlePipeMovement() {
       for (int i = 0; i < pipeList.Count; i++) {
         Pipe pipe = pipeList[i];
+        bool isToTheRightOfBird = pipe.GetXPosition() > BIRD_X_POSITION;
         pipe.Move();
+        if (isToTheRightOfBird && pipe.GetXPosition() <= BIRD_X_POSITION) {
+          // Pipe passed Bird
+          pipesPassedCount++;
+        }
         if (pipe.GetXPosition() < PIPE_DESTROY_X_POSITION) {
           // Destroy the Pipe
           pipe.DestroySelf();
@@ -145,6 +152,10 @@ public class Level : MonoBehaviour
 
     public int GetPipesSpawned() {
       return pipesSpawned;
+    }
+
+    public int GetPipesPassedCount() {
+      return pipesPassedCount;
     }
 
     /*
