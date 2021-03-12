@@ -17,7 +17,7 @@ public class GameHandler : MonoBehaviour
         //   count++;
         //   }, .300f);
 
-        GameObject gameObject = new GameObject("Pipe", typeof(SpriteRenderer));
-        gameObject.GetComponent<SpriteRenderer>().sprite = GameAssets.GetInstance().pipeHeadSprite;
+        // GameObject gameObject = new GameObject("Pipe", typeof(SpriteRenderer));
+        // gameObject.GetComponent<SpriteRenderer>().sprite = GameAssets.GetInstance().pipeHeadSprite;
     }
 }
