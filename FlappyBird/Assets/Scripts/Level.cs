@@ -11,6 +11,11 @@ public class Level : MonoBehaviour
     private const float PIPE_DESTROY_X_POSITION = -100f;
     private const float PIPE_SPAWN_X_POSITION = +100f;
 
+    private static Level instance;
+
+    public static Level GetInstance() {
+      return instance;
+    }
     private List<Pipe> pipeList;
     private int pipesSpawned;
     private float pipeSpawnTimer;
@@ -24,9 +29,9 @@ public class Level : MonoBehaviour
       Impossible,
     }
     private void Awake() {
+      instance = this;
       pipeList = new List<Pipe>();
       pipeSpawnTimerMax = 1f;
-      gapSize = 50f;
       SetDifficulty(Difficulty.Easy);
     }
     private void Start() {
@@ -136,6 +141,10 @@ public class Level : MonoBehaviour
 
       Pipe pipe = new Pipe(pipeHead, pipeBody);
       pipeList.Add(pipe);
+    }
+
+    public int GetPipesSpawned() {
+      return pipesSpawned;
     }
 
     /*
