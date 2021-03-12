@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 753
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 4886
+  controlID: 5658
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 1063
     height: 753
-  m_MinSize: {x: 403, y: 492}
+  m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 4887
+  controlID: 5659
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,10 +163,10 @@ MonoBehaviour:
     y: 0
     width: 1063
     height: 455
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 4888
+  controlID: 5633
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 262
     height: 455
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -240,7 +240,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -313,9 +313,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.19370784, y: 2.0823061, z: 0}
+    m_Target: {x: 2.886942, y: 0.14984065, z: 0.66793656}
     speed: 2
-    m_Value: {x: 0.19370784, y: 2.0823061, z: 0}
+    m_Value: {x: 2.886942, y: 0.14984065, z: 0.66793656}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -365,9 +365,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 91.90714
+    m_Target: 54.847424
     speed: 2
-    m_Value: 91.90714
+    m_Value: 54.847424
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -501,8 +501,8 @@ MonoBehaviour:
     y: 455
     width: 1063
     height: 298
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -548,19 +548,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Textures
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Textures
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/deangladish/Olafs-Bird/FlappyBird
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: be390000
-    m_LastClickedID: 14782
+    m_SelectedIDs: c2390000
+    m_LastClickedID: 14786
     m_ExpandedIDs: 00000000ae39000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -614,9 +614,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6a390000
-    m_LastClickedInstanceID: 14698
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300001e49000062390000aa390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -690,8 +690,8 @@ MonoBehaviour:
     y: 0
     width: 377
     height: 753
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -733,5 +733,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 14698
-  m_LastVerticalScrollValue: 100
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
