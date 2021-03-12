@@ -9,8 +9,8 @@ public class Level : MonoBehaviour
     private const float PIPE_HEAD_HEIGHT = 3.75f;
 
     private void Start() {
-      CreatePipe(40f, 20f, true);
-      CreatePipe(40f, 20f, false);
+      CreatePipe(50f, 20f, true);
+      CreatePipe(50f, 20f, false);
     }
 
     private void CreateGapPipes(float gapY, float gapSize, float xPosition) {
