@@ -13,5 +13,9 @@ public class ScoreWindow : MonoBehaviour
 
   private void Update() {
     scoreText.text = Level.GetInstance().GetPipesPassedCount().ToString();
+<<<<<<< HEAD
+=======
+    //scoreText.text = Level.GetInstance().GetPipesSpawned().ToString();
+>>>>>>> demo-branch
   }
 }

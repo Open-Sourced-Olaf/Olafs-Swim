@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
+=======
+using System;
+>>>>>>> demo-branch
 
 public class GameAssets : MonoBehaviour
 {
@@ -17,4 +21,15 @@ public class GameAssets : MonoBehaviour
     public Sprite pipeHeadSprite;
     public Transform pfPipeHead;
     public Transform pfPipeBody;
+<<<<<<< HEAD
+=======
+     public Transform pfGround;
+    public AudioClip birdJump;
+    // public SoundAudioClip[] soundAudioClipArray;
+    // [Serializable]
+    // public class SoundAudioClip{
+    //   public SoundManager.Sound sound;
+    //   public AudioClip audioClip;
+    // }
+>>>>>>> demo-branch
 }
