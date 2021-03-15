@@ -3,8 +3,6 @@ sceneSetups:
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-<<<<<<< HEAD
-=======
 - path: Assets/Scenes/Loading.unity
   isLoaded: 1
   isActive: 0
@@ -13,4 +11,3 @@ sceneSetups:
   isLoaded: 1
   isActive: 0
   isSubScene: 0
->>>>>>> demo-branch

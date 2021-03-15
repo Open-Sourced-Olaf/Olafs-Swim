@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":7.48881196975708,"y":3.8080978393554689,"z":0.1710529625415802},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":66.05541229248047,"orthographic":true}
-=======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":9.056442260742188,"y":3.497217893600464,"z":0.13785088062286378},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":68.19188690185547,"orthographic":true}
->>>>>>> demo-branch

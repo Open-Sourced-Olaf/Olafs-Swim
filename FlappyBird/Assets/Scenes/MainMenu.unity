@@ -94,14 +94,9 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-<<<<<<< HEAD
-    m_ShowResolutionOverlay: 1
-    m_ExportTrainingData: 0
-=======
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
->>>>>>> demo-branch
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -126,78 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
---- !u!1001 &62147330
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1358890527}
-    m_Modifications:
-    - target: {fileID: 3638002846688340011, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_Name
-      value: GameAssets
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.4001243
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.654237
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -14.3125
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d9939957204202c4f9dc3fce1fbd524f, type: 3}
-=======
->>>>>>> demo-branch
 --- !u!1 &148928557
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,28 +167,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 148928557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-<<<<<<< HEAD
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-=======
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
->>>>>>> demo-branch
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
@@ -336,28 +247,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 183707603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 0.21484515, g: 0.52051675, b: 0.6415094, a: 1}
   m_RaycastTarget: 1
-<<<<<<< HEAD
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-=======
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
->>>>>>> demo-branch
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -367,10 +266,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-<<<<<<< HEAD
-=======
   m_PixelsPerUnitMultiplier: 1
->>>>>>> demo-branch
 --- !u!222 &183707606
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -388,13 +284,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 183707603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.14509805}
   m_EffectDistance: {x: 10, y: -10}
   m_UseGraphicAlpha: 1
@@ -407,13 +299,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 183707603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 3, y: 3}
   m_UseGraphicAlpha: 1
@@ -448,10 +336,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-<<<<<<< HEAD
-=======
   m_RayTracingMode: 0
->>>>>>> demo-branch
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -463,10 +348,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-<<<<<<< HEAD
-=======
   m_ReceiveGI: 1
->>>>>>> demo-branch
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -477,11 +359,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -245223545
-<<<<<<< HEAD
-  m_SortingLayer: -1
-=======
   m_SortingLayer: 0
->>>>>>> demo-branch
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e2516176ecb5f514f8ab93be186e7503, type: 3}
   m_Color: {r: 0.3117626, g: 0.5660378, b: 0.29102886, a: 1}
@@ -556,8 +434,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 602f74cbbbd80034b96f88091a8e7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   hoverBehaviourType: 1
   hoverBehaviour_Color_Enter: {r: 0.23073156, g: 0.6394482, b: 0.8018868, a: 1}
   hoverBehaviour_Color_Exit: {r: 0.21176472, g: 0.5176471, b: 0.6392157, a: 1}
@@ -698,13 +576,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 763929767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -719,13 +593,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 763929767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -805,8 +675,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 602f74cbbbd80034b96f88091a8e7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   hoverBehaviourType: 1
   hoverBehaviour_Color_Enter: {r: 0.5188679, g: 0.2667764, b: 0.29198554, a: 1}
   hoverBehaviour_Color_Exit: {r: 0.29411766, g: 0.21568629, b: 0.22352943, a: 1}
@@ -826,10 +696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1031459420}
   - component: {fileID: 1031459421}
-<<<<<<< HEAD
-=======
   - component: {fileID: 1031459422}
->>>>>>> demo-branch
   m_Layer: 0
   m_Name: MainMenuWindow
   m_TagString: Untagged
@@ -868,12 +735,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1031459419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: 736786afa66b6cb41ba562e5f77dd106, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: b2f2e667cc770cb409db8fb529ec1a84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!114 &1031459422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,9 +748,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2f2e667cc770cb409db8fb529ec1a84, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1 &1228734570
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,28 +796,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1228734570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-<<<<<<< HEAD
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-=======
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
->>>>>>> demo-branch
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 100
@@ -977,15 +828,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228734570}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
---- !u!4 &1246678069 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3638002846688340020, guid: d9939957204202c4f9dc3fce1fbd524f,
-    type: 3}
-  m_PrefabInstance: {fileID: 62147330}
-  m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> demo-branch
 --- !u!1 &1310567686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,28 +876,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1310567686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 0.29411766, g: 0.21568628, b: 0.22464722, a: 1}
   m_RaycastTarget: 1
-<<<<<<< HEAD
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-=======
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
->>>>>>> demo-branch
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1065,10 +895,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-<<<<<<< HEAD
-=======
   m_PixelsPerUnitMultiplier: 1
->>>>>>> demo-branch
 --- !u!222 &1310567689
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1086,13 +913,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1310567686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.14509805}
   m_EffectDistance: {x: 10, y: -10}
   m_UseGraphicAlpha: 1
@@ -1105,13 +928,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1310567686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 3, y: 3}
   m_UseGraphicAlpha: 1
@@ -1144,10 +963,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 519420032}
-<<<<<<< HEAD
-  - {fileID: 1246678069}
-=======
->>>>>>> demo-branch
   - {fileID: 2099187520}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1162,8 +977,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8bd6b58fb31419642809ea618fc9ea37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1 &1526883125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,28 +1099,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1645744592}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-<<<<<<< HEAD
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-=======
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
->>>>>>> demo-branch
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
@@ -1369,13 +1172,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1974030317}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1392,13 +1191,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1974030317}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-=======
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
->>>>>>> demo-branch
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -1433,9 +1228,5 @@ Transform:
   - {fileID: 1974030318}
   - {fileID: 763929768}
   m_Father: {fileID: 1358890527}
-<<<<<<< HEAD
-  m_RootOrder: 2
-=======
   m_RootOrder: 1
->>>>>>> demo-branch
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

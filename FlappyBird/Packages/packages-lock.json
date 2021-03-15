@@ -78,8 +78,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
-=======
     "com.unity.connect.share": {
       "version": "4.1.1",
       "depth": 0,
@@ -97,7 +95,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
->>>>>>> demo-branch
     "com.unity.ext.nunit": {
       "version": "1.0.6",
       "depth": 1,
@@ -128,8 +125,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
-=======
     "com.unity.settings-manager": {
       "version": "1.0.2",
       "depth": 1,
@@ -137,7 +132,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
->>>>>>> demo-branch
     "com.unity.test-framework": {
       "version": "1.1.22",
       "depth": 0,

@@ -12,11 +12,8 @@ public class Level : MonoBehaviour
     private const float PIPE_MOVE_SPEED = 30f;
     private const float PIPE_DESTROY_X_POSITION = -100f;
     private const float PIPE_SPAWN_X_POSITION = +100f;
-<<<<<<< HEAD
-=======
      private const float GROUND_DESTROY_X_POSITION = -100f;
     private const float GROUND_SPAWN_X_POSITION = +100f;
->>>>>>> demo-branch
     private const float BIRD_X_POSITION = 0f;
 
     private static Level instance;
@@ -24,10 +21,7 @@ public class Level : MonoBehaviour
     public static Level GetInstance() {
       return instance;
     }
-<<<<<<< HEAD
-=======
     private List<Transform>groundList;
->>>>>>> demo-branch
     private List<Pipe> pipeList;
     private int pipesPassedCount;
     private int pipesSpawned;
@@ -42,50 +36,12 @@ public class Level : MonoBehaviour
       Hard,
       Impossible,
     }
-<<<<<<< HEAD
-
-    private enum State {
-=======
     private enum State{
->>>>>>> demo-branch
       WaitingToStart,
       Playing,
       BirdDead,
     }
-<<<<<<< HEAD
-    private void Awake() {
-      instance = this;
-      pipeList = new List<Pipe>();
-      pipeSpawnTimerMax = 1f;
-      SetDifficulty(Difficulty.Easy);
-      state = State.WaitingToStart;
-    }
-    private void Start() {
-      Bird.GetInstance().OnDied += Bird_OnDied;
-      Bird.GetInstance().OnStartedPlaying += Bird_OnStartedPlaying;
-    }
 
-    private void Bird_OnStartedPlaying(object sender, System.EventArgs e) {
-      state = State.Playing;
-    }
-
-    private void Bird_OnDied(object sender, System.EventArgs e) {
-      // CMDebug.TextPopupMouse("Dead!");
-      state = State.BirdDead;
-
-      FunctionTimer.Create(() => {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
-        }, 1f);
-    }
-
-    private void Update() {
-      if (state == State.Playing) {
-        HandlePipeMovement();
-        HandlePipeSpawning();
-      }
-    }
-=======
-    
     private void Awake() {
       instance = this;
       pipeList = new List<Pipe>();
@@ -121,7 +77,7 @@ public class Level : MonoBehaviour
      // HandleGround();
 
       }
-     
+
     }
   /*  private void SpawnInitialGround(){
       Transform.groundTransform;
@@ -134,7 +90,7 @@ public class Level : MonoBehaviour
     private void HandleGround(){
       foreach(Transform groundTransform in groundList){
         groundTransform.position+=new Vector3(-1,0,0)*PIPE_MOVE_SPEED*Time.deltaTime;
-    
+
       if(groundTransform.position.x<GROUND_DESTROY_X_POSITION){
         float rightMostXPosition=-100f;
         for(int i=0;i<groundList.Count;i++){
@@ -149,7 +105,6 @@ public class Level : MonoBehaviour
       }
 
     }*/
->>>>>>> demo-branch
 
     private void HandlePipeSpawning() {
       pipeSpawnTimer -= Time.deltaTime;
@@ -174,10 +129,7 @@ public class Level : MonoBehaviour
         if (isToTheRightOfBird && pipe.GetXPosition() <= BIRD_X_POSITION && pipe.IsBottom()) {
           // Pipe passed Bird
           pipesPassedCount++;
-<<<<<<< HEAD
-=======
           //  SoundManager.PlaySound(SoundManager.Sound.Score);
->>>>>>> demo-branch
         }
         if (pipe.GetXPosition() < PIPE_DESTROY_X_POSITION) {
           // Destroy the Pipe
