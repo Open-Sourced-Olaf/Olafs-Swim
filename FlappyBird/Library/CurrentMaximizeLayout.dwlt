@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 754
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 679, y: 471}
+  m_MaxSize: {x: 14001, y: 14021}
   vertical: 0
-  controlID: 10204
+  controlID: 27833
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 1063
     height: 754
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 403, y: 471}
+  m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 10205
+  controlID: 27834
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 10174
+  controlID: 27901
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,17 +214,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: -1
     y: 83
     width: 261
     height: 408
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 45}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 42faffff4afbffff56fbffff58fbffff5afbffffca390000d0390000dc3900001e3a0000ec3a00005a3b0000
+      m_ExpandedIDs: b257ffff7e90ffff42faffff4afbffff56fbffff58fbffff5afbffffca390000d0390000dc3900001e3a0000ec3a00005a3b000022e900003ee90000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -298,7 +298,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 262
+    x: 261
     y: 83
     width: 799
     height: 408
@@ -313,9 +313,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 140.95905, y: -11.612459, z: 0}
+    m_Target: {x: 64.52695, y: -26.374594, z: -0.9173014}
     speed: 2
-    m_Value: {x: 140.95905, y: -11.612459, z: 0}
+    m_Value: {x: 64.52695, y: -26.374594, z: -0.9173014}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -365,9 +365,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 142.66037
+    m_Target: 115.2129
     speed: 2
-    m_Value: 142.66037
+    m_Value: 115.2129
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -530,7 +530,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: -1
     y: 512
     width: 1062
     height: 304
@@ -548,19 +548,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Textures
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Textures
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/deangladish/Olafs-Bird/FlappyBird
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ca3b0000
-    m_LastClickedID: 15306
+    m_SelectedIDs: c63b0000
+    m_LastClickedID: 15302
     m_ExpandedIDs: 00000000ac3b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -614,10 +614,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ec3a0000
-    m_LastClickedInstanceID: 15084
+    m_SelectedInstanceIDs: 7c310000
+    m_LastClickedInstanceID: 12668
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300001e49000062390000aa390000ee3b0000
+    m_ExpandedInstanceIDs: c62300001e49000062390000aa390000ee3b0000923a0000f63d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -718,7 +718,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1063
+    x: 1062
     y: 83
     width: 376
     height: 733
@@ -733,5 +733,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 15084
+  m_LastInspectedObjectInstanceID: 12668
   m_LastVerticalScrollValue: 0
