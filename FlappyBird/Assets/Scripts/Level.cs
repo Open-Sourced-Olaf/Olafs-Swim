@@ -30,6 +30,7 @@ public class Level : MonoBehaviour
     private List<Pipe> pipeList;
     private int pipesPassedCount;
     private int pipesSpawned;
+
     private float pipeSpawnTimer;
     private float coinSpawnTimer;
     private float coinSpawnTimerMax;

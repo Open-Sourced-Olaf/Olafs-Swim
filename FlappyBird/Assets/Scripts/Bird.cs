@@ -6,6 +6,7 @@ using System;
 
 public class Bird : MonoBehaviour
 {
+    public int coinsCollectedCount;
     private const float JUMP_AMOUNT = 100f;
     private static Bird instance;
     public static Bird GetInstance(){
@@ -74,7 +75,8 @@ private enum State{
           OnDied(this,EventArgs.Empty);
         }
       } else {
-        CMDebug.TextPopupMouse("Collected a coin!");
+        coinsCollectedCount++;
+        CMDebug.TextPopupMouse(coinsCollectedCount.ToString());
       }
     }
 }
