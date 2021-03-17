@@ -6,26 +6,33 @@ using CodeMonkey.Utils;
 
 public class Level : MonoBehaviour
 {
+    // private const float COIN_Y_POSITION= 50f;
     private const float CAMERA_ORTHO_SIZE = 50f;
     private const float PIPE_WIDTH = 7.8f;
     private const float PIPE_HEAD_HEIGHT = 3.75f;
     private const float PIPE_MOVE_SPEED = 30f;
+    private const float COIN_MOVE_SPEED = 30f;
+    private const float COIN_DESTROY_X_POSITION = -100f;
     private const float PIPE_DESTROY_X_POSITION = -100f;
     private const float PIPE_SPAWN_X_POSITION = +100f;
      private const float GROUND_DESTROY_X_POSITION = -100f;
     private const float GROUND_SPAWN_X_POSITION = +100f;
     private const float BIRD_X_POSITION = 0f;
+    private const float COIN_SPAWN_X_POSITION = +100f;
 
     private static Level instance;
 
     public static Level GetInstance() {
       return instance;
     }
+    private List<Coin> coinList;
     private List<Transform>groundList;
     private List<Pipe> pipeList;
     private int pipesPassedCount;
     private int pipesSpawned;
     private float pipeSpawnTimer;
+    private float coinSpawnTimer;
+    private float coinSpawnTimerMax;
     private float pipeSpawnTimerMax;
     private float gapSize;
     private State state;
@@ -49,8 +56,12 @@ public class Level : MonoBehaviour
       pipeSpawnTimerMax = 1f;
       SetDifficulty(Difficulty.Easy);
       state=State.WaitingToStart;
+
+      coinList = new List<Coin>();
+      coinSpawnTimerMax = 1f;
     }
     private void Start() {
+
       Bird.GetInstance().OnDied+=Bird_OnDied;
        Bird.GetInstance().OnStartedPlaying+=Bird_onStartedPlaying;
 
@@ -73,11 +84,11 @@ public class Level : MonoBehaviour
     private void Update() {
       if(state==State.Playing){
          HandlePipeMovement();
-      HandlePipeSpawning();
+         HandleCoinMovement();
+         HandlePipeSpawning();
+         HandleCoinSpawning();
      // HandleGround();
-
       }
-
     }
   /*  private void SpawnInitialGround(){
       Transform.groundTransform;
@@ -106,6 +117,17 @@ public class Level : MonoBehaviour
 
     }*/
 
+    private void HandleCoinSpawning() {
+      coinSpawnTimer -= Time.deltaTime;
+      if (coinSpawnTimer < 0) {
+        // Time to spawn another Coin;
+        coinSpawnTimer += coinSpawnTimerMax;
+        float yPosition = Random.Range(-CAMERA_ORTHO_SIZE, CAMERA_ORTHO_SIZE);
+        CreateCoin(COIN_SPAWN_X_POSITION, yPosition);
+      // CreateCoin(0f, 20f);
+      // CreateCoin(-20f, 30f);
+      }
+    }
     private void HandlePipeSpawning() {
       pipeSpawnTimer -= Time.deltaTime;
       if (pipeSpawnTimer < 0) {
@@ -121,6 +143,18 @@ public class Level : MonoBehaviour
       }
     }
 
+    private void HandleCoinMovement() {
+      for (int i = 0; i < coinList.Count; i++) {
+        Coin coin = coinList[i];
+        // coinTransform.position += new Vector3(-1, 0, 0) * COIN_MOVE_SPEED * Time.deltaTime;
+        coin.Move();
+        if (coin.GetXPosition() < COIN_DESTROY_X_POSITION) {
+          coin.DestroySelf();
+          coinList.Remove(coin);
+          i--;
+        }
+      }
+    }
     private void HandlePipeMovement() {
       for (int i = 0; i < pipeList.Count; i++) {
         Pipe pipe = pipeList[i];
@@ -172,6 +206,16 @@ public class Level : MonoBehaviour
       CreatePipe(CAMERA_ORTHO_SIZE * 2f - gapY - gapSize * .5f, xPosition, false);
       pipesSpawned++;
       SetDifficulty(GetDifficulty());
+    }
+
+    private void CreateCoin(float xPosition, float coinYPosition) {
+      Transform coinTransform = Instantiate(GameAssets.GetInstance().pfCoins);
+      // coins.position = new Vector3(xPosition, 0f);
+      // SpriteRenderer coinsSpriteRenderer = coins.GetComponent<SpriteRenderer>();
+      coinTransform.position = new Vector3(xPosition, coinYPosition);
+
+      Coin coin = new Coin(coinTransform);
+      coinList.Add(coin);
     }
 
     private void CreatePipe(float height, float xPosition, bool isBottom) {
@@ -248,6 +292,27 @@ public class Level : MonoBehaviour
       public void DestroySelf() {
         Destroy(pipeHeadTransform.gameObject);
         Destroy(pipeBodyTransform.gameObject);
+      }
+    }
+
+    private class Coin {
+
+      private Transform coinTransform;
+
+      public Coin(Transform coinTransform) {
+        this.coinTransform = coinTransform;
+      }
+
+      public void Move() {
+        coinTransform.position += new Vector3(-1, 0, 0) * COIN_MOVE_SPEED * Time.deltaTime;
+      }
+
+      public float GetXPosition() {
+        return coinTransform.position.x;
+      }
+
+      public void DestroySelf() {
+        Destroy(coinTransform.gameObject);
       }
     }
 }

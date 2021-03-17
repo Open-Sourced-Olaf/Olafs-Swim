@@ -67,11 +67,14 @@ private enum State{
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {
-
-      birdRigidbody2D.bodyType=RigidbodyType2D.Static;
-    //  SoundManager.PlaySound(SoundManager.Sound.Lose);
-      if(OnDied!=null){
-        OnDied(this,EventArgs.Empty);
+      if (collider.tag != "coins") {
+        birdRigidbody2D.bodyType=RigidbodyType2D.Static;
+        //  SoundManager.PlaySound(SoundManager.Sound.Lose);
+        if(OnDied!=null){
+          OnDied(this,EventArgs.Empty);
+        }
+      } else {
+        CMDebug.TextPopupMouse("Collected a coin!");
       }
     }
 }
