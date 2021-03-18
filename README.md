@@ -1,15 +1,15 @@
-## Olafs-Bird
+## OceanTrashPick
 
-Hey it's your flappy bird, one of your favorite games Olaf! After you're done with your wild adventure maybe you can try out our bird. We do it all for you!
+Hey welcome to OceanTrashPick! Join us in an under the sea adventure as a scuba diver who picks up trash to save marine life, but be wary of the sharks nearby!
 So, in order to play this repository you have to have Unity Hub installed as well as Unity. Make sure to specifically save Scenes because although the base files (sprites and scripts) and the Unity framework are unrelated, they still depend on the existence of a Scene.
 The game.app file is the current status of our project (exported from Unity Hub)!
 
 
 ## Features
 
-- Player can collect coins, coin score will increase
-- Player have to escape the pipes/sharks, number of pipes spawned count will increase.
-- As the player encounters a large number of spawned pipes, the difficulty of the game will increase and pipes gap size will decrease.
+- Player can collect trash, and score will increase
+- Player has to escape the sharks, number of pipes spawned count will increase.
+- As the player encounters a large number of spawned sharks, the difficulty of the game will increase and sharks gap size will decrease.
 - We have a game over window and menu bar displayed at the start of the game.
 
 ## Steps to run the project locally
