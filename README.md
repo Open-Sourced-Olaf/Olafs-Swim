@@ -7,9 +7,9 @@ The game.app file is the current status of our project (exported from Unity Hub)
 
 ## Features
 
-- Player can  collect coins, coin score will increase
+- Player can collect coins, coin score will increase
 - Player have to escape the pipes/sharks, number of pipes spawned count will increase.
-- As the player spawned large number of pipes, the difficulty of the game will increase and pipes gap size will decrease.
+- As the player encounters a large number of spawned pipes, the difficulty of the game will increase and pipes gap size will decrease.
 - We have a game over window and menu bar displayed at the start of the game.
 
 ## Steps to run the project locally
@@ -17,7 +17,7 @@ The game.app file is the current status of our project (exported from Unity Hub)
 - Clone this repository
 - Now open your unity
 - Open the "Flappy Bird" Folder in the unity
-- :tada, hit the play button in the scene view, you will able to run the game.
+- :tada:, hit the play button in the scene view, you will able to run the game.
     
 ##### Deployed app : 
 - Deployment done using Unity WebGL publisher. 
@@ -37,14 +37,14 @@ The game.app file is the current status of our project (exported from Unity Hub)
 
 - Fork this repository.
 - Clone your forked repository.
-- Move to the cloned repository.
+- Navigate to the cloned repository.
 - Open it in your unity engine 
-- Create a branch.
+- Create a branch (Unity will load the branch you are looking at)
 - Make changes that you want to do.
 - Test it locally.
 - Add those changes to git.
 - Commit those changes to git.
-- Push the Changes.
+- Push the Changes to the branch.
 - :tada: Now create a pull request from your GitHub.
 - Awesome, you just contributed to this project.
 
