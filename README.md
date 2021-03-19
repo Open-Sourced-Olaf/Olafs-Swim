@@ -11,6 +11,7 @@ The game.app file is the current status of our project (exported from Unity Hub)
 - Player has to escape the sharks, number of pipes spawned count will increase.
 - As the player encounters a large number of spawned sharks, the difficulty of the game will increase and sharks gap size will decrease.
 - We have a game over window and menu bar displayed at the start of the game.
+- The player's high score will be saved with every attempt.
 
 ## Steps to run the project locally
 
