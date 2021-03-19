@@ -31,34 +31,36 @@ private enum State{
       state=State.WaitingToStart;
     }
 
+    // Update is called once per frame
     private void Update() {
       switch(state){
         default:
         case State.WaitingToStart:{
           if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) {
-          state=State.Playing;
-          birdRigidbody2D.bodyType=RigidbodyType2D.Dynamic;
-        Jump();
-        if(OnStartedPlaying!=null){
-          OnStartedPlaying(this,EventArgs.Empty);
+            state=State.Playing;
+            Jump();
+            if(OnStartedPlaying!=null) {
+              OnStartedPlaying(this,EventArgs.Empty);
+            }
+          }
         }
-      }
-
-        }
-
         break;
         case State.Playing:{
           if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) {
-        Jump();
-      }
-
+            birdRigidbody2D.bodyType=RigidbodyType2D.Dynamic;
+            Jump();
+          }
+          if (Input.GetKey(KeyCode.LeftArrow)) {
+            birdRigidbody2D.transform.position += Vector3.left * 100f * Time.deltaTime;
+          }
+          if (Input.GetKey(KeyCode.RightArrow)) {
+            birdRigidbody2D.transform.position += Vector3.right * 100f * Time.deltaTime;
+          }
         }
-
         break;
         case State.Dead:
         break;
       }
-
     }
 
     private void Jump() {
@@ -68,13 +70,13 @@ private enum State{
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {
-      if (collider.tag != "coins") {
+      if (collider.tag != "coins" && collider.tag != "ground") {
         birdRigidbody2D.bodyType=RigidbodyType2D.Static;
         //  SoundManager.PlaySound(SoundManager.Sound.Lose);
         if(OnDied!=null){
           OnDied(this,EventArgs.Empty);
         }
-      } else {
+      } else if (collider.tag != "ground") {
         coinsCollectedCount++;
         CMDebug.TextPopupMouse(coinsCollectedCount.ToString());
       }
