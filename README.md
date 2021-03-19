@@ -17,7 +17,7 @@ The game.app file is the current status of our project (exported from Unity Hub)
 
 - Clone this repository `git clone https://github.com/Open-Sourced-Olaf/Olafs-Bird.git`
 - Now open your unity
-- Open the "Flappy Bird" Folder in the unity  `cd Olaf-Birds`
+- Open the "Flappy Bird" Folder in the unity  `cd Olafs-Bird`
 - :tada:, hit the play button in the scene view, you will able to run the game.
     
 ##### Deployed app : https://play.unity.com/p/webgl-builds-27387/edit
@@ -38,12 +38,12 @@ The game.app file is the current status of our project (exported from Unity Hub)
 
 - Fork this repository.
 - Clone your forked repository, `git clone https://github.com/Open-Sourced-Olaf/Olafs-Bird.git`
-- Navigate to the cloned repository  `cd Olaf-Birds`
+- Navigate to the cloned repository  `cd Olafs-Bird`
 - Open it in your unity engine 
-- Create a branch (Unity will load the branch you are looking at) `git checkout -b "BRANCH_NAME"
+- Create a branch (Unity will load the branch you are looking at) `git checkout -b "BRANCH_NAME"`
 - Make changes that you want to do.
 - Test it locally.
-- Add those changes to git. `git add.`
+- Add those changes to git. `git add .`
 - Commit those changes to git. `git commit -m "COMMIT MESSAGE"`
 - Push the Changes to the branch. `git push origin BRANCH_NAME`
 - :tada: Now create a pull request from your GitHub.
