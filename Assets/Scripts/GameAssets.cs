@@ -19,12 +19,15 @@ public class GameAssets : MonoBehaviour
     public Transform pfCoins;
     public Transform pfPipeHead;
     public Transform pfPipeBody;
-    public Transform pfGround;
-    public AudioClip birdJump;
-    // public SoundAudioClip[] soundAudioClipArray;
-    // [Serializable]
-    // public class SoundAudioClip{
-    //   public SoundManager.Sound sound;
-    //   public AudioClip audioClip;
-    // }
+     public Transform pfGround;
+    public Transform pfCloud_1;
+    public Transform pfCloud_2;
+    public Transform pfCloud_3;
+  ///  public AudioClip birdJump;
+     public SoundAudioClip[] soundAudioClipArray;
+     [Serializable]
+     public class SoundAudioClip{
+       public SoundManager.Sound sound;
+      public AudioClip audioClip;
+     }
 }

@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2771136760753404878
 Transform:
   m_ObjectHideFlags: 0
@@ -98,8 +98,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.26666668}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.56, y: 0.08}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 7.8, y: 0.4}
     newSize: {x: 1.56, y: 0.08}
     adaptiveTilingThreshold: 0.5
     drawMode: 1

@@ -15,14 +15,14 @@ public  static class SoundManager
 
     }
     //pass Sound sound in arguments
-  public static void PlaySound(){
+  public static void PlaySound(Sound sound){
       GameObject gameObject=new GameObject("Sound",typeof(AudioSource));
       AudioSource audioSource =gameObject.GetComponent<AudioSource>();
-      audioSource.PlayOneShot(GameAssets.GetInstance().birdJump);
-    //   audioSource.PlayOneShot(GetAudioClip(sound));
+     // audioSource.PlayOneShot(GameAssets.GetInstance().birdJump);
+      audioSource.PlayOneShot(GetAudioClip(sound));
   }
 
-  /*private static AudioClip GetAudioClip(Sound sound){
+  private static AudioClip GetAudioClip(Sound sound){
       foreach(GameAssets.SoundAudioClip soundAudioClip in GameAssets.GetInstance().soundAudioClipArray){
           if(soundAudioClip.sound==sound){
               return soundAudioClip.audioClip;
@@ -35,6 +35,6 @@ public  static class SoundManager
       buttonUI.MouseOverOnceFunc+=()=>PlaySound(Sound.ButtonOver);
       buttonUI.ClickFunc+=()=>PlaySound(Sound.ButtonClick);
 
-  }*/
+  }
 
 }

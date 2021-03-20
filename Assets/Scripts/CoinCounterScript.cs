@@ -11,6 +11,11 @@ public class CoinCounterScript : MonoBehaviour {
 
 	// Reference to coin counter text game object
 	Text coinCounterText;
+	  private static CoinCounterScript instance;
+
+    public static CoinCounterScript GetInstance() {
+      return instance;
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -21,7 +26,7 @@ public class CoinCounterScript : MonoBehaviour {
 		// Getting text component of coin counter text game object
 		coinCounterText = GetComponent<Text> ();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 

@@ -6,6 +6,12 @@ using CodeMonkey.Utils;
 
 public class Level : MonoBehaviour
 {
+
+    // Movement Speed (0 means don't move)
+    public float speed = 0;
+
+    // Switch Movement Direction every x seconds
+    public float switchTime = 2;
     // private const float COIN_Y_POSITION= 50f;
     private const float CAMERA_ORTHO_SIZE = 50f;
     private const float PIPE_WIDTH = 7.8f;
@@ -65,10 +71,18 @@ public class Level : MonoBehaviour
 
       Bird.GetInstance().OnDied+=Bird_OnDied;
        Bird.GetInstance().OnStartedPlaying+=Bird_onStartedPlaying;
+        // Initial Movement Direction
+        GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
+
+        // Switch every few seconds
+        InvokeRepeating("Switch", 0, switchTime);
 
       // CreatePipe(50f, 20f, true);
       // CreatePipe(50f, 20f, false);
       // CreateGapPipes(50f, 20f, 20f);
+    }
+     void Switch() {
+        GetComponent<Rigidbody2D>().velocity *= -1;
     }
     private void Bird_onStartedPlaying(object sender, System.EventArgs e){
       state=State.Playing;

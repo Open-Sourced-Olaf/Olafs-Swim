@@ -17,6 +17,7 @@ public class Bird : MonoBehaviour
 
     private State state;
 
+
     private Rigidbody2D birdRigidbody2D;
 private enum State{
   WaitingToStart,
@@ -31,32 +32,29 @@ private enum State{
       state=State.WaitingToStart;
     }
 
-    // Update is called once per frame
     private void Update() {
       switch(state){
         default:
         case State.WaitingToStart:{
           if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) {
-            state=State.Playing;
-            Jump();
-            if(OnStartedPlaying!=null) {
-              OnStartedPlaying(this,EventArgs.Empty);
-            }
-          }
+          state=State.Playing;
+          birdRigidbody2D.bodyType=RigidbodyType2D.Dynamic;
+        Jump();
+        if(OnStartedPlaying!=null){
+          OnStartedPlaying(this,EventArgs.Empty);
         }
+      }
+
+        }
+
         break;
         case State.Playing:{
           if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) {
-            birdRigidbody2D.bodyType=RigidbodyType2D.Dynamic;
-            Jump();
-          }
-          if (Input.GetKey(KeyCode.LeftArrow)) {
-            birdRigidbody2D.transform.position += Vector3.left * 100f * Time.deltaTime;
-          }
-          if (Input.GetKey(KeyCode.RightArrow)) {
-            birdRigidbody2D.transform.position += Vector3.right * 100f * Time.deltaTime;
-          }
+        Jump();
+      }
+
         }
+
         break;
         case State.Dead:
         break;
@@ -65,20 +63,25 @@ private enum State{
 
     private void Jump() {
       birdRigidbody2D.velocity = Vector2.up * JUMP_AMOUNT;
-      SoundManager.PlaySound();
-     //   SoundManager.PlaySound(SoundManager.Sound.BirdJump);
+    //  SoundManager.PlaySound();
+       SoundManager.PlaySound(SoundManager.Sound.BirdJump);
     }
 
     private void OnTriggerEnter2D(Collider2D collider) {
-      if (collider.tag != "coins" && collider.tag != "ground") {
+      if (collider.tag != "coins") {
         birdRigidbody2D.bodyType=RigidbodyType2D.Static;
-        //  SoundManager.PlaySound(SoundManager.Sound.Lose);
+         SoundManager.PlaySound(SoundManager.Sound.Lose);
         if(OnDied!=null){
           OnDied(this,EventArgs.Empty);
         }
-      } else if (collider.tag != "ground") {
+      } else {
         coinsCollectedCount++;
-        CMDebug.TextPopupMouse(coinsCollectedCount.ToString());
+         SoundManager.PlaySound(SoundManager.Sound.Score);
+        //CMDebug.TextPopupMouse(coinsCollectedCount.ToString());
       }
     }
+     public int GetCoinsCollected() {
+      return coinsCollectedCount;
+    }
+
 }

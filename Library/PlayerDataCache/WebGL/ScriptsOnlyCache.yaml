@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - Bird
     - CodeMonkey.Assets
     - CodeMonkey.Utils.Button_UI
+    - ExplosionScript
     - GameAssets
     - GameHandler
     - GameOverWindow
@@ -11,6 +12,7 @@ ScriptsOnlyBuild:
     - LoaderUpdate
     - MainMenuWindow
     - ScoreWindow
+    - obstacle
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -63,44 +65,54 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 11408}
+      Script: {instanceID: 11362}
     - Class: 114
-      Script: {instanceID: 11570}
+      Script: {instanceID: 11410}
     - Class: 114
-      Script: {instanceID: 11626}
+      Script: {instanceID: 11574}
     - Class: 114
-      Script: {instanceID: 12192}
+      Script: {instanceID: 11632}
     - Class: 114
-      Script: {instanceID: 12316}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12582}
+      Script: {instanceID: 12322}
     - Class: 114
-      Script: {instanceID: 12662}
+      Script: {instanceID: 12410}
     - Class: 114
-      Script: {instanceID: 13422}
+      Script: {instanceID: 12592}
     - Class: 114
-      Script: {instanceID: 13692}
+      Script: {instanceID: 12672}
     - Class: 114
-      Script: {instanceID: 13830}
+      Script: {instanceID: 13432}
     - Class: 114
-      Script: {instanceID: 14138}
+      Script: {instanceID: 13702}
     - Class: 114
-      Script: {instanceID: 14358}
+      Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 14462}
+      Script: {instanceID: 14150}
     - Class: 114
-      Script: {instanceID: 14480}
+      Script: {instanceID: 14372}
     - Class: 114
-      Script: {instanceID: 14504}
+      Script: {instanceID: 14476}
+    - Class: 114
+      Script: {instanceID: 14494}
+    - Class: 114
+      Script: {instanceID: 14518}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -139,15 +151,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 11570}
+      Script: {instanceID: 11574}
     - Class: 114
-      Script: {instanceID: 12108}
+      Script: {instanceID: 12114}
     - Class: 114
-      Script: {instanceID: 12316}
+      Script: {instanceID: 12322}
     - Class: 114
-      Script: {instanceID: 13830}
+      Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 14462}
+      Script: {instanceID: 14476}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -175,32 +187,38 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 11570}
+      Script: {instanceID: 11574}
     - Class: 114
-      Script: {instanceID: 11626}
+      Script: {instanceID: 11632}
     - Class: 114
-      Script: {instanceID: 12192}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12316}
+      Script: {instanceID: 12322}
     - Class: 114
-      Script: {instanceID: 12796}
+      Script: {instanceID: 12592}
     - Class: 114
-      Script: {instanceID: 13692}
+      Script: {instanceID: 12806}
     - Class: 114
-      Script: {instanceID: 13830}
+      Script: {instanceID: 13702}
     - Class: 114
-      Script: {instanceID: 14358}
+      Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 14462}
+      Script: {instanceID: 14372}
     - Class: 114
-      Script: {instanceID: 14504}
+      Script: {instanceID: 14476}
+    - Class: 114
+      Script: {instanceID: 14518}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -248,8 +266,20 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName:
+    className: ExplosionScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName:
     className: GameOverWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName:
+    className: CoinCounterScript
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -286,6 +316,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: ac84a02675a0a9566203b8f238f71050
+    assemblyName: Assembly-CSharp.dll
+    namespaceName:
+    className: CoinSpawnerScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -332,7 +368,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 523ce309f50d9eee6a8fc0e2f86c9c97
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
-    namespaceName: 
+    namespaceName:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
@@ -410,7 +446,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName:
     className: LoaderUpdate
   - hash:
       serializedVersion: 2
@@ -468,21 +504,27 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: fd264fbb2074cd99e36e73f274795597
+    assemblyName: Assembly-CSharp.dll
+    namespaceName:
+    className: obstacle
+  - hash:
+      serializedVersion: 2
       Hash: 8dc90e648ac06f43bdd31ac9fa8f4579
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 623de8a4d9e943e63a0342da162c5d04
+      Hash: 161c2a2cb42828b9e97543afcd36fc0f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName:
     className: GameAssets
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: fd264fbb2074cd99e36e73f274795597
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName:
     className: Level
   - hash:
       serializedVersion: 2
@@ -506,7 +548,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName:
     className: MainMenuWindow
   - hash:
       serializedVersion: 2
@@ -600,9 +642,9 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 9244141a74f83622eaca1e2abdaf1159
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName:
     className: Bird
   - hash:
       serializedVersion: 2
@@ -642,6 +684,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 459b50185a167c1d210a783633c72823
+    assemblyName: Assembly-CSharp.dll
+    namespaceName:
+    className: CoinScript
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -656,8 +704,14 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName:
     className: ScoreWindow
+  - hash:
+      serializedVersion: 2
+      Hash: fd264fbb2074cd99e36e73f274795597
+    assemblyName: Assembly-CSharp.dll
+    namespaceName:
+    className: obstacle
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -758,7 +812,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName:
     className: GameHandler
   - hash:
       serializedVersion: 2
