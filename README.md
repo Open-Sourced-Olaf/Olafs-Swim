@@ -20,7 +20,7 @@ The game.app file is the current status of our project (exported from Unity Hub)
 - Open the "Flappy Bird" Folder in the unity  `cd Olafs-Bird`
 - :tada:, hit the play button in the scene view, you will able to run the game.
     
-##### Deployed app : https://play.unity.com/p/webgl-builds-27387/edit
+##### Deployed app : https://play.unity.com/p/webgl-builds-27387
 - Deployment done using Unity WebGL publisher. 
 
 
