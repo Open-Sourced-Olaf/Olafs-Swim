@@ -77,6 +77,7 @@ private enum State{
       } else {
         coinsCollectedCount++;
          SoundManager.PlaySound(SoundManager.Sound.Score);
+         collider.gameObject.transform.position = new Vector3(50f,502f,-50f);
         //CMDebug.TextPopupMouse(coinsCollectedCount.ToString());
       }
     }
